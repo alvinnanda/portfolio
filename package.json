@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --port 3006",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "vercel-build": "vite build"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",

@@ -146,10 +146,6 @@
         }
     }
 
-    .animate-bounce-soft {
-        animation: bounce-soft 2s infinite ease-in-out;
-    }
-
     .scroll-indicator {
         animation: fade-in-out 2s infinite ease-in-out;
         transition: transform 0.3s ease;

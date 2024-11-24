@@ -1,4 +1,3 @@
-# portfolio
 # Personal Portfolio Website
 
 A modern, responsive portfolio website built with Svelte and Vite, featuring a clean design and smooth animations.

@@ -44,12 +44,12 @@
   <h2 class="section-title text-4xl font-bold text-center mb-16 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Experience</h2>
   {#if visible}
     <div class="relative">
-      <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-blue-200 to-purple-200"></div>
+      <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-blue-200 to-purple-200"></div>
       
       <div class="space-y-12">
         {#each experiences as exp, i}
           <div in:fly="{{ y: 50, duration: 500, delay: i * 200 }}" class="relative flex items-center justify-center">
-            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full z-10"></div>
+            <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full z-10"></div>
             
             <div class="w-5/6 md:w-[45%] {i % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'}">
               <div class="card p-8 hover:transform hover:scale-105 transition-all duration-300">

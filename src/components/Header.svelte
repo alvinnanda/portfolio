@@ -5,10 +5,19 @@
   let isMenuOpen = false;
   let y;
   let activeSection = '';
+  let isMobile = typeof window !== 'undefined' ? window.innerWidth < 768 : false;
 
   const toggleMenu = () => isMenuOpen = !isMenuOpen;
 
+  const checkScreenSize = () => {
+    if (typeof window !== 'undefined') {
+      isMobile = window.innerWidth < 768;
+    }
+  };
+
   const checkActiveSection = () => {
+    if (typeof window === 'undefined') return;
+    
     const sections = document.querySelectorAll('section[id]');
     const scrollPosition = window.scrollY + window.innerHeight / 2;
 
@@ -24,8 +33,13 @@
   };
 
   onMount(() => {
-    // Initial check for active section
+    checkScreenSize();
     checkActiveSection();
+    
+    // Tambahkan timeout untuk memastikan DOM sudah ter-render
+    setTimeout(() => {
+      checkActiveSection();
+    }, 100);
 
     const sections = document.querySelectorAll('section[id]');
     const observer = new IntersectionObserver(
@@ -41,20 +55,30 @@
 
     sections.forEach(section => observer.observe(section));
 
-    // Add scroll event listener for more accurate tracking
     window.addEventListener('scroll', checkActiveSection);
+    window.addEventListener('resize', checkScreenSize);
 
     return () => {
       window.removeEventListener('scroll', checkActiveSection);
+      window.removeEventListener('resize', checkScreenSize);
     };
   });
 
   $: isScrolled = y > 50;
+  $: headerVisible = !(isMobile && activeSection === 'about');
 </script>
 
 <svelte:window bind:scrollY={y}/>
 
-<header class="fixed w-full z-50 transition-all duration-300" class:bg-white={isScrolled} class:shadow-md={isScrolled}>
+<header 
+  class="fixed w-full z-50 transition-all duration-500 transform"
+  class:bg-white={isScrolled} 
+  class:shadow-md={isScrolled}
+  class:translate-y-0={headerVisible}
+  class:opacity-100={headerVisible}
+  class:-translate-y-full={!headerVisible}
+  class:opacity-0={!headerVisible}
+>
   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
     <div in:fade="{{ duration: 1000, delay: 200 }}">
       <h1 class="text-2xl font-bold">Alvinnanda Dary</h1>
@@ -105,6 +129,10 @@
 </header>
 
 <style>
+  header {
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
   .active {
     color: var(--primary-color);
   }

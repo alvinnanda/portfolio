@@ -84,7 +84,7 @@
                         creating innovative solutions through elegant code.
                     </p>
                     <div class="flex flex-wrap gap-4 pt-4">
-                        {#each ['Full-stack Development', 'API Integration', 'Mobile App Development', 'Database Management'] as skill, i}
+                        {#each ['Full-stack Development', 'Mobile App Development', 'API Integration'] as skill, i}
                             <div in:fly="{{ y: 20, duration: 500, delay: 300 + i * 100 }}" 
                                  class="px-4 py-2 rounded-full bg-white border border-gray-200 
                                         shadow-sm hover:shadow-md transition-all duration-300">

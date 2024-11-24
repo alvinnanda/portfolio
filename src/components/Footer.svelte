@@ -1,7 +1,7 @@
 <footer class="bg-gray-900 text-gray-200 py-8 mt-16">
   <div class="container mx-auto px-4">
     <div class="flex flex-col md:flex-row justify-between items-center">
-      <p class="mb-4 md:mb-0">&copy; 2023 Alvinnanda Dary. All rights reserved.</p>
+      <p class="mb-4 md:mb-0">&copy; 2024 Alvinnanda Dary. All rights reserved.</p>
       <div class="flex space-x-6">
         <a href="https://linkedin.com/in/alvinnandad" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition duration-300">
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

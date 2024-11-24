@@ -40,6 +40,21 @@
     --accent-color: #9d174d;
   }
 
+  :global(body) {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  :global(.section-title::after) {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 1rem auto 0;
+  }
+
   @keyframes fadeInUp {
     from {
       opacity: 0;

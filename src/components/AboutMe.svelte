@@ -79,10 +79,11 @@
                     <h1 class="text-5xl lg:text-6xl font-bold text-gray-800">
                         Hi, I'm <span class="text-pink-600">Alvinnanda</span>
                     </h1>
-                    <p class="text-xl text-gray-600 leading-relaxed">
+                    <!-- <p class="text-xl text-gray-600 leading-relaxed">
                         Passionate software engineer specializing in full-stack development, 
                         creating innovative solutions through elegant code.
-                    </p>
+                    </p> -->
+                    <p>Full-stack developer with a proven ability to solve complex problems through efficient and impactful solutions, specializing in the development of innovative, scalable applications that align with user and business needs.</p>
                     <div class="flex flex-wrap gap-4 pt-4">
                         {#each ['Full-stack Development', 'Mobile App Development', 'API Integration'] as skill, i}
                             <div in:fly="{{ y: 20, duration: 500, delay: 300 + i * 100 }}" 

@@ -20,7 +20,7 @@
       description: "TakonAI is an AI chat app that delivers intelligent, real-time conversations powered by OpenAI and Anthropic technologies. It offers personalized responses, adapting to user context, while ensuring a seamless experience with secure authentication and the ability to view chat history.",
       technologies: ["Next.js", "Nest.js", "OpenAI", "Anthropic"],
       image: "/presen_takonai.png?height=300&width=400",
-      link: "#"
+      link: "https://takonai-zeta.vercel.app"
     },
     {
       name: "Online Attendance and Workload Analysis System",

@@ -31,7 +31,7 @@
           </div>
           <div class="flex-1">
             <p class="text-gray-600 text-sm md:text-base font-medium">Phone</p>
-            <a href="tel:+6282301357568" class="text-base md:text-lg font-semibold text-gray-800 hover:text-blue-600 transition-colors break-all">
+            <a href="https://wa.me/6282301357568" target="_blank" class="text-base md:text-lg font-semibold text-gray-800 hover:text-blue-600 transition-colors break-all">
               +62 823 0135 7568
             </a>
           </div>

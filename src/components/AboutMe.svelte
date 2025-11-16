@@ -99,7 +99,7 @@
                     <div class="relative">
                         <div class="absolute -inset-4 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full blur-2xl opacity-30"></div>
                         <div class="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl">
-                            <img src="/alvinnanda.jpg?height=400&width=400" 
+                            <img src="/alvinnanda.jpeg?height=400&width=400" 
                                  alt="Alvinnanda Dary" 
                                  class="object-cover">
                         </div>

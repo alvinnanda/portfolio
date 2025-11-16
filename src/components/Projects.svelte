@@ -4,11 +4,17 @@
 
   const projects = [
     {
+      name: "bosOnline",
+      description: "Bosonline is an online ordering and sales platform that enables merchants to create high-conversion checkout forms, manage orders, process payments, and integrate with multiple courier services in a single streamlined system. Designed to support both small businesses and high-volume sellers, bosOnline provides tools for product management, shipping automation, seller dashboards, analytics, and customer verification flows. By centralizing order processing and logistics, the platform helps merchants improve operational efficiency, increase conversion rates, and scale their business with ease",
+      technologies: ["Golang", "Fiber", "Next.js", "Debezium"],
+      image: "/bosonline.png?height=300&width=400",
+      link: "https://bosonline.id"
+    },{
       name: "bosCOD",
       description: "Boscod is a multi-platform application (Android, iOS, and WebApp) that provides delivery and payment services with integrated courier APIs and a PPOB system. It is designed to meet the needs of a large user base. The app enables real-time delivery tracking and efficient payment processing, supporting various courier services, including IDExpress, JNE, JNT, SiCepat, SAPExpress, Anteraja, and Ninja Xpress.",
       technologies: ["Ionic", "React", "Codeigniter", "Laravel", "Microservices"],
       image: "/presen_boscod.png?height=300&width=400",
-      link: "https://boscod.com"
+      link: "https://ww3.boscod.com/"
     },{
       name: "bosAgen",
       description: "Bosagen is an Android application similar to Boscod, but designed with agents as partners to facilitate delivery and payment services. It aims to address the needs of users who may not be able to place orders online, allowing agents to act as intermediaries. The application integrates courier APIs and a PPOB system, serving as a bridge between agents and customers.",

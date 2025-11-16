@@ -3,22 +3,29 @@
   import { fade, fly } from 'svelte/transition';
 
   const experiences = [
-    {
+     {
       id: 1,
+      role: "Project Lead",
+      company: "bosonline.id",
+      period: "2025 - Present",
+      description: "As the Project Lead at bosOnline, I oversaw the end-to-end development of a high-conversion online ordering platform and led the planning and delivery of critical features including multi-form checkout flows, order management, courier API integrations, payment processing, and seller dashboards. I provided technical direction and guidance to the engineering team, prioritized technical debt and feature development, and ensured the platform delivered a seamless, reliable experience for thousands of sellers. As a result, the team continuously improved product quality, optimized onboarding and verification flows, and enhanced analytics features that help sellers track and grow their business.",
+      technologies: ["Golang", "Fiber", "Next.js",  "Debezium", "RabbitMQ", "PostgreSQL", "Redis"]
+    },{
+      id: 2,
       role: "Full Stack Developer",
       company: "bosCOD.com",
       period: "2021 - Present",
       description: "At Boscod, I ensured smooth integration with various courier APIs, enabling real-time tracking and automatic status updates for deliveries. I developed an intuitive and optimized Android application tailored to the needs of a large user base, while also selecting and testing software tools to ensure development efficiency and quality. Additionally, I integrated and managed PPOB systems for seamless payment processing, resolved technical issues during API integration and application development, and actively collaborated with cross-functional teams to analyze user needs, design technical solutions, and ensure the application's usability. I also utilized Agile/Scrum methodologies and tools like Jira to manage project workflows effectively and maintain development efficiency.",
       technologies: ["Ionic", "React", "Vue.js",  "Firebase", "CodeIgniter", "Laravel", "PostgreSQL", "Redis"]
     },{
-      id: 2,
+      id: 3,
       role: "Training Program",
       company: "DTS Kominfo - Intro to Full Stack Developer",
       period: "Mei 2021 - Jul 2021",
       description: "I completed a training program in Full Stack Development, covering web technologies such as HTML & CSS, JavaScript, SQL, Node.js, and Python, gaining a solid foundation in building web applications.",
       technologies: ["Hr", "CSS", "JavaScript", "SQL", "Node.js", "Python"]
     },{
-      id: 3,
+      id: 4,
       role: "Internship",
       company: "PT. Kereta Api Indonesia (Persero) Upt. Pengusahaan Aset Madura",
       period: "Apr 2019 - Mei 2019",

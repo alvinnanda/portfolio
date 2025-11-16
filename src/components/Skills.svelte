@@ -8,7 +8,7 @@
     {
       name: "Backend",
       icon: "⚙️",
-      skills: [ "PHP", "Laravel", "CodeIgniter", "Node.js", "Nest", "Rust", "Python"]
+      skills: [ "Golang","PHP", "Laravel", "CodeIgniter", "Node.js", "Nest", "Rust", "Python"]
     },
     {
       name: "Mobile",

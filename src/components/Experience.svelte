@@ -23,7 +23,7 @@
       company: "DTS Kominfo - Intro to Full Stack Developer",
       period: "Mei 2021 - Jul 2021",
       description: "I completed a training program in Full Stack Development, covering web technologies such as HTML & CSS, JavaScript, SQL, Node.js, and Python, gaining a solid foundation in building web applications.",
-      technologies: ["Hr", "CSS", "JavaScript", "SQL", "Node.js", "Python"]
+      technologies: ["HTML", "CSS", "JavaScript", "SQL", "Node.js", "Python"]
     },{
       id: 4,
       role: "Internship",

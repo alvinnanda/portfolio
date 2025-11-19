@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
+  import MigrationBanner from './components/MigrationBanner.svelte';
   import Header from './components/Header.svelte';
   import AboutMe from './components/AboutMe.svelte';
   import Skills from './components/Skills.svelte';
@@ -16,6 +17,7 @@
 </script>
 
 <main class="font-sans bg-white min-h-screen">
+  <MigrationBanner />
   <Header />
   {#if loaded}
     <div in:fade="{{ duration: 1000 }}">
